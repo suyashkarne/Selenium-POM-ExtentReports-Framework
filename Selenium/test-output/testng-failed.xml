@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="browser" value="edge"/>
+  <test parallel="none" name="Test(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="tests.cartTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="launchBrowser"/>
+          <include name="afterSuite"/>
+          <include name="initExtentReport"/>
+          <include name="closeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.cartTest -->
+      <class name="tests.homepageTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="homepageValidation"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.homepageTest -->
+      <class name="tests.loginTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.loginTest -->
+      <class name="tests.aboutUsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="aboutUsValidation"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.aboutUsTest -->
+      <class name="tests.placeOrderTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="placeOrderValidation"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.placeOrderTest -->
+      <class name="tests.contactTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.contactTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
